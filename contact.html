@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Friend Site</title>
+  <meta name="description" content="Personal website template." />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="titlebar">
+      <div class="name">Friend Site</div>
+      <button class="menu-toggle" id="openMenu">OPEN MENU</button>
+    </div>
+
+    <div class="window">
+      <div class="menubar">
+        <div class="brandline">Folder: Contact</div>
+
+        <nav class="nav" aria-label="Site navigation">
+          <div class="folder">
+            <button type="button">ABOUT</button>
+            <div class="drop" role="menu" aria-label="About folder">
+              <a href="about.html"><span>Bio</span><span class="tag">About</span></a>
+              <a href="cv.html"><span>CV</span><span class="tag">About</span></a>
+            </div>
+          </div>
+
+          <div class="folder">
+            <button type="button">WORKS</button>
+            <div class="drop" role="menu" aria-label="Works folder">
+              <a href="selected-works.html"><span>Selected recent pieces</span><span class="tag">Works</span></a>
+              <a href="all-works.html"><span>All pieces</span><span class="tag">Works</span></a>
+            </div>
+          </div>
+
+          <div class="folder">
+            <button type="button">PROJECTS</button>
+            <div class="drop" role="menu" aria-label="Projects folder">
+              <a href="piaon.html"><span>Piaon</span><span class="tag">Projects</span></a>
+              <a href="micro-tuner.html"><span>Micro tuner</span><span class="tag">Projects</span></a>
+              <a href="events-news.html"><span>Events &amp; News</span><span class="tag">Projects</span></a>
+            </div>
+          </div>
+
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+
+      <div class="hintline">Tip: Menu folders open like classic “directories”. ESC closes menus.</div>
+
+      <main class="content">
+        
+<div class="h1">Contact</div>
+<p class="p">Email:</p>
+<p class="p"><span id="contactEmail">your@email.com</span></p>
+<div class="hr"></div>
+<div class="h1">Links</div>
+<div id="contactLinks"></div>
+<div id="contactMount" style="display:none"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", ()=> {
+    const m = document.getElementById("contactMount");
+    if (m) m.style.display = "block";
+  });
+</script>
+
+      </main>
+
+      <div class="statusbar">
+        <div id="statusLeft">READY.</div>
+        <div>STATIC • FAST • GITHUB PAGES</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile overlay menu -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="panel">
+      <div class="head">
+        <div>MENU</div>
+        <button id="closeMenu">CLOSE</button>
+      </div>
+      <div class="body">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT / BIO</a>
+        <a href="cv.html">ABOUT / CV</a>
+        <a href="selected-works.html">WORKS / SELECTED</a>
+        <a href="all-works.html">WORKS / ALL</a>
+        <a href="piaon.html">PROJECTS / PIAON</a>
+        <a href="micro-tuner.html">PROJECTS / MICRO TUNER</a>
+        <a href="events-news.html">PROJECTS / EVENTS & NEWS</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>
